@@ -1,0 +1,11 @@
+
+;  the complex-grid row section contains a single entry field that
+;  displays the contents of the text list column
+;  we set the background of each row according to the value of iList.Value
+;  we do this by changing the exception $forecolor of the entry field
+Do iList.$sendall(iGridRef.$objs.Text.[iList.$line].$forecolor.$assign(pick(iList.Value,rgb(221,255,221),rgb(255,255,221),rgb(255,221,221))))
+Calculate iList.$line as 0
+Calculate iExceptionsSet as kTrue
+
+;  see http://www.omnis.net/technotes/tnno0003.jsp
+;  for full list of field properties that can be set via exceptions
