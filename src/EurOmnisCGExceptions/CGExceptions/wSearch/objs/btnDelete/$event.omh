@@ -1,4 +1,0 @@
-On evClick     ;; Event Parameters - pRow( Itemreference )
-	Do iList.$remove(iList.$line)
-	Do refComplexGrid.$redraw()
-	Do method SetExceptions (iList.$line)

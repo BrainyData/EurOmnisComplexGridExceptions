@@ -1,2 +1,0 @@
-Send to trace log {[$crecipient().$name]}
-Quit event handler (Pass to next handler)

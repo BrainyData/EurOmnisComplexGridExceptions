@@ -1,3 +1,0 @@
-On evClick
-	Send to trace log {[iList.$line]}
-	Do method SetExceptions (iList.$line)
