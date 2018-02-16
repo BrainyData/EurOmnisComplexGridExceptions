@@ -1,0 +1,7 @@
+
+;  clear all complex grid exceptions
+Do iGridRef.$clearexceptions()
+Calculate iExceptionsSet as kFalse
+
+;  see http://www.omnis.net/technotes/tnno0003.jsp
+;  for full list of field properties that can be set via exceptions

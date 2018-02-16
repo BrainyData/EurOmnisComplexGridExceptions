@@ -1,0 +1,8 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	If iExceptionsSet
+		Do method ClearExceptions
+		Calculate $cfield.$text as "Set Exceptions"
+	Else
+		Do method SetExceptions
+		Calculate $cfield.$text as "Clear Exceptions"
+	End If

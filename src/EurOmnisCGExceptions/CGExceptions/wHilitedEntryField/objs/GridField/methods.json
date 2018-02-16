@@ -1,0 +1,40 @@
+[
+	{
+		"name": "$event",
+		"ident": 0,
+		"order": 16384,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$control",
+		"ident": 1,
+		"order": 268451841,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "objLine",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "iList.$line"
+			},
+			{
+				"name": "objName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"initval": "$cobj().$name"
+			}
+		]
+	}
+]

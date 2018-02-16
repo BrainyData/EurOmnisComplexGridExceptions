@@ -1,0 +1,12 @@
+On evBefore
+	;  we show the focus on a before by changing the deafult border style and background color
+	;  NOTE: see "Init.Val/Calc" for local vars objName and objLine
+	Calculate $cfield.$objs.[objName].[objLine].$effect as kBorderCtrlEdit
+	Calculate $cfield.$objs.[objName].[objLine].$forecolor as rgb(255,255,204)
+On evAfter
+	;  we can clear all the exceptions for the current field only
+	Do $cfield.$objs.[objName].[objLine].$clearexceptions()
+	
+	
+	;  see http://www.omnis.net/technotes/tnno0003.jsp
+	;  for full list of field properties that can be set via exceptions
